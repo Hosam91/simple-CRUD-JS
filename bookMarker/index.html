@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html> -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container w-75">
+      <h1>BookMarker</h1>
+      <hr />
+      <div class="crud">
+        <h2>Bookmark your favorite sites</h2>
+        <h5 class="text-center">Site Name</h5>
+        <input class="form-control" id="siteName" type="text" placeholder="Bookmark Name" />
+        <div class="alert-danger valid" id="validName">
+          <p>Enter Valid website Name starting with capital litter</p>
+        </div>
+        <h5 class="text-center">Site Url</h5>
+        <input class="form-control" id="siteUrl" type="text" placeholder="website URL" />
+        <div class="alert-danger valid" id="validUrl">
+          <p>Enter Valid website url</p>
+        </div>
+        <button id="submit" class="btn-outline-primary form-control w-50 m-auto mt-4">
+          Submit
+        </button>
+        <button id="edit" class="btn-outline-primary form-control w-50 m-auto mt-4" onclick="edit()">
+          Edit
+        </button>
+        
+        <hr />
+          <h5 class="text-center">Looking for website..!?</h5>
+
+        <input type="text" name=" " class="btn-outline-primary form-control  w-50 m-auto mt-4" placeholder="search" id="search">
+      
+        <hr>
+      </div>
+
+      <table class="table  table-striped w-75 mx-auto my-4"> 
+        <thead>
+          <tr>
+            <th>site Number</th>
+            <th>site Name</th>
+            <th>site URL</th>
+            <th>Delete</th>
+            
+          </tr>
+        </thead>
+        <tbody id="tableData">
+         
+      <a href=""></a>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
